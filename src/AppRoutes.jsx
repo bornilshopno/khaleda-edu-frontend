@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router';
 import Home from './components/home/Home';
-import MainLayout from './components/shared/MainLayout';
+import MainLayout from './components/layouts/MainLayout';
 import Login from './components/auth/Login';
 
 const AppRoutes = () => {
