@@ -4,7 +4,7 @@ import { IoEye } from 'react-icons/io5';
 import SocialLogin from './SocialLogin';
 import useAuth from '../hooks/useAuth';
 import Swal from 'sweetalert2';
-import { useNavigate } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 
 const Register = () => {
     const [visible, setVisible] = useState(false);
@@ -91,7 +91,9 @@ const Register = () => {
 
                         </div>
                         <p className="text-red-500 font-bold text-center">{passErr}</p>
-                        <div className="form-control mt-6">
+
+                         <p className='text-xs mt-4'>already have account? please <Link to={'/login'} className='font-semibold'>log in</Link>!</p>
+                        <div className="form-control mt-2">
                             <button className="btn bg-gray-400 w-full rounded-lg">Register</button>
                         </div>
                     </form>
