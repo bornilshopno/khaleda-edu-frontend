@@ -4,6 +4,8 @@ import Home from './components/pages/home/Home';
 import MainLayout from './components/layouts/MainLayout';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
+import Resources from './components/pages/resources/Resources';
+import Blogs from './components/pages/blogs/Blogs';
 
 const AppRoutes = () => {
     return (
@@ -12,6 +14,8 @@ const AppRoutes = () => {
                 <Route index element={<Home />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
+                <Route path="/blogs" element={<Blogs />} />
+                <Route path="/resources" element={<Resources />} />
           </Route>
         </Routes>
     );

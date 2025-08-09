@@ -7,9 +7,9 @@ import { BsCart3 } from 'react-icons/bs';
 const Navbar = () => {
     const { user, logOut } = useAuth();
     const links = <>
-        <li> <Link>Home</Link></li>
-        <li> <Link>Blogs</Link></li>
-        <li> <Link>Resources</Link></li>
+        <li> <Link to={'/'}>Home</Link></li>
+        <li> <Link to={'/blogs'}>Blogs</Link></li>
+        <li> <Link to={'/resources'}>Resources</Link></li>
 
     </>
     return (
