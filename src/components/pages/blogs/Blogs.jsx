@@ -3,7 +3,7 @@
 const Blogs = () => {
     return (
         <div>
-            Blogs
+            Blogs data to be securely retrived here
         </div>
     );
 };
