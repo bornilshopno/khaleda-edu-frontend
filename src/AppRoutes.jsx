@@ -6,6 +6,7 @@ import Login from './components/auth/Login';
 import Register from './components/auth/Register';
 import Resources from './components/pages/resources/Resources';
 import Blogs from './components/pages/blogs/Blogs';
+import AddBlogs from './components/pages/AddBlogs';
 
 const AppRoutes = () => {
     return (
@@ -16,6 +17,7 @@ const AppRoutes = () => {
                 <Route path="/register" element={<Register />} />
                 <Route path="/blogs" element={<Blogs />} />
                 <Route path="/resources" element={<Resources />} />
+                <Route path="/add-blog" element={<AddBlogs />} />
           </Route>
         </Routes>
     );
